@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>some.group.id</groupId>
-	<artifactId>my-component</artifactId>
+	<artifactId>receipt</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
-	<name>Test</name>
+	<name>Receipt</name>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<testSourceDirectory>test</testSourceDirectory>
