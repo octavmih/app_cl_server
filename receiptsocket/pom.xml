@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.receipt</groupId>
-	<artifactId>receipt</artifactId>
+	<artifactId>receiptsocket</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
-	<name>Receipt</name>
+	<name>Receipt-Socket</name>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<testSourceDirectory>test</testSourceDirectory>
@@ -65,10 +65,29 @@
 
 	<dependencies>
 
+		 
+		
 		  <dependency>
-			<groupId>com.babel.core</groupId>
-			<artifactId>babel-core</artifactId>
-			<version>1.0.0</version>
+			<groupId>com.receipt</groupId>
+			<artifactId>receipt</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+
+	
+
+
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.4.0.GA</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>xml-apis</artifactId>
+					<groupId>xml-apis</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -84,12 +103,19 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>1.2.13</version>
-			<scope>provided</scope>
-		</dependency>
 		
+		
+     <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>1.5.2</version>
+    </dependency>
+	
+	  <dependency>
+            <groupId>postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.1-901.jdbc4</version>
+        </dependency>
+
 	</dependencies>
 </project>
